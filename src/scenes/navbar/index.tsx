@@ -46,7 +46,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <button
-                    className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
+                    className="rounded-md bg-secondary-500 px-6 py-2 hover:bg-primary-500 hover:text-white"
                     onClick={() => alert("TODO: Download Functionality")}
                   >
                     Download Resume
