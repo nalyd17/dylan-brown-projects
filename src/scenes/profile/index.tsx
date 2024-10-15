@@ -4,18 +4,17 @@ import { motion } from "framer-motion";
 const Profile = () => {
   return (
     <section id="profile" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      <div
-        className={`mx-auto mt-16 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2`}
-      >
+      <div className="mx-auto mt-16 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2">
         <motion.div
+          className="flex justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <img alt="dylan-headshot" src={DylanHeadshot}></img>
+          <img alt="dylan-headshot" src={DylanHeadshot} />
         </motion.div>
         <motion.div
-          className="flex w-[90%] flex-col justify-center gap-4 text-xs md:text-sm"
+          className="flex flex-col justify-center gap-4 text-xs md:text-sm"
           initial={{ opacity: 0, scale: 0.2 }}
           animate={{ x: [500, 0], opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
