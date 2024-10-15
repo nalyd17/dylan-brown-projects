@@ -15,14 +15,14 @@ const Profile = () => {
           <img alt="dylan-headshot" src={DylanHeadshot}></img>
         </motion.div>
         <motion.div
-          className="flex w-[90%] flex-col justify-center gap-4 text-sm"
+          className="flex w-[90%] flex-col justify-center gap-4 text-xs md:text-sm"
           initial={{ opacity: 0, scale: 0.2 }}
           animate={{ x: [500, 0], opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <div className="gap-1">
-            <p className="text-6xl">Dylan Brown</p>
-            <p className="text-2xl underline">Software Development Engineer</p>
+            <p className="text-4xl md:text-6xl">Dylan Brown</p>
+            <p className="text-xl md:text-2xl">Software Development Engineer</p>
           </div>
           <p>
             Experienced Software Development Engineer with 5+ years of
