@@ -1,4 +1,5 @@
 import DylanHeadshot from "@/assets/DylanHeadshot.png";
+import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
@@ -6,10 +7,19 @@ const Profile = () => {
       <div
         className={`mx-auto mt-12 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2`}
       >
-        <div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           <img alt="dylan-headshot" src={DylanHeadshot}></img>
-        </div>
-        <div className="flex w-[90%] flex-col justify-center gap-4 text-sm">
+        </motion.div>
+        <motion.div
+          className="flex w-[90%] flex-col justify-center gap-4 text-sm"
+          initial={{ opacity: 0, scale: 0.2 }}
+          animate={{ x: [500, 0], opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           <div className="gap-1">
             <p className="text-6xl">Dylan Brown</p>
             <p className="text-2xl underline">Software Development Engineer</p>
@@ -29,7 +39,7 @@ const Profile = () => {
             Amplify, etc.), CI/CD concepts including pipeline solutions, and
             software scaling.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
