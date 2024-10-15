@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <section id="profile" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       <div
-        className={`mx-auto mt-12 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2`}
+        className={`mx-auto mt-16 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2`}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
