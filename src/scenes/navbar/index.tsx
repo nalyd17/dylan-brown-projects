@@ -25,7 +25,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className={`${flexBetween} w-full`}>
             <h6 className="w-full">Dylan Brown Projects</h6>
             {isAboveMediumScreens ? (
-              <div className="flex w-full items-center justify-end gap-16">
+              <div className="flex w-full items-center justify-end gap-8">
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
                     page="Profile"

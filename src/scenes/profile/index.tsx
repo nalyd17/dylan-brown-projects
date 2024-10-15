@@ -1,4 +1,5 @@
 import DylanHeadshot from "@/assets/DylanHeadshot.png";
+import { MapPinIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 const Profile = () => {
@@ -22,6 +23,10 @@ const Profile = () => {
           <div className="gap-1">
             <p className="text-4xl md:text-6xl">Dylan Brown</p>
             <p className="text-xl md:text-2xl">Software Development Engineer</p>
+            <div className="flex justify-start gap-1">
+              <MapPinIcon className="h-6 w-6" />
+              <p className="text-lg">Austin, TX</p>
+            </div>
           </div>
           <p>
             Experienced Software Development Engineer with 5+ years of
