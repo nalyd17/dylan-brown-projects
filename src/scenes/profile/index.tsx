@@ -1,11 +1,19 @@
 import DylanHeadshot from "@/assets/DylanHeadshot.png";
+import { SelectedPage } from "@/shared/types";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
-const Profile = () => {
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const Profile = ({ setSelectedPage }: Props) => {
   return (
-    <section id="profile" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      <div className="mx-auto mt-16 grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2">
+    <section id="profile" className="gap-16 bg-gray-20 md:h-full md:pb-0">
+      <motion.div
+        className="mx-auto grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2"
+        onViewportEnter={() => setSelectedPage(SelectedPage.Profile)}
+      >
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -44,7 +52,7 @@ const Profile = () => {
             software scaling.
           </p>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

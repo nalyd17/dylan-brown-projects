@@ -1,5 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import Profile from "@/scenes/profile";
+import WorkExperience from "@/scenes/workexperience";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
 
@@ -28,7 +29,10 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <Profile />
+      <div className="flex flex-col gap-16 py-28">
+        <Profile setSelectedPage={setSelectedPage} />
+        <WorkExperience setSelectedPage={setSelectedPage} />
+      </div>
     </div>
   );
 }
